@@ -6,6 +6,24 @@ body{
     background-color:#E5E5E5;
 }
 
+ion-icon{
+    visibility: visible;
+    cursor: pointer;
+}
+
+video{
+    cursor:pointer;
+}
+
+.container{
+    position:relative;
+    margin: 88px auto;
+    width:935px;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+}
+
+
 /*Top Bar */
 .topo{
     display: flex;
@@ -50,6 +68,7 @@ body{
     width:25px;
     height:25px;
     margin-right: 25px;
+    
 }
 
 .conteudo-topo input{
@@ -61,19 +80,11 @@ body{
 }
 
 /*Conteúdo principal */
-.container{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    margin: 88px auto;
-    width:935px;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .conteudo-principal{
     max-width:614px;
     margin-right: 20px;
- 
 }
 
 /*Stories */
@@ -126,12 +137,15 @@ body{
 
 /*Início da sessão de posts */
 .post{
+
     border: 1px solid #DBDBDB;
-     display:flex;
+    display:flex;
+   
     flex-direction: column;
     border-radius: 3px;
     margin: 24px 0px 60px 0px;
     background: #ffffff;
+   
 }
 
 .info-usuario{
@@ -164,16 +178,24 @@ body{
 
 
 .interacao{
-    padding: 10px;
+    padding: 10px 12px 10px 10px;
     align-items:center;
 }
 
-.interacao .icon{
-    margin-right: 5px;
+.icon.curtir{
+    width:20px;
+    
 }
 
-.interacao .mark{
+.interacao .mark,  .icon.curtir{
     float: right;
+    margin-right:5px;
+}
+
+.vermelho{
+    color:red;
+    visibility: visible;
+    
 }
 
 .interacao .info-post{
@@ -190,7 +212,7 @@ body{
 }
 
 .allcomments{
-    margin: 5px 19px 5px 10px;
+    margin: 5px 15px 5px 10px;
 }
 
 .allcomments > p {
@@ -208,14 +230,6 @@ body{
 .comment img{
     width:14px;
     height:14px;
-}
-
-.curtir{
-    margin-right:0;
-    fill: red   ;
-}
-.curtir:hover{
-  fill:red;
 }
 
 .comment span{
@@ -264,17 +278,15 @@ body{
 
 /*Início da Side Bar */
 .side-bar{
-    position:absolute;
-    background-color:blue;
     width:293px; 
-    right: 0;
+   
 }
 
 .div-fixed{
-
     width: 293px;
     position:fixed;
     padding-right:20px;
+
 }
 
 .perfil{
